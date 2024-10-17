@@ -1,0 +1,45 @@
+.card{
+    width: 500px;
+    align-items: center;
+    margin-left: 50px;
+    .card-img{
+        position: relative;
+        width:100%
+    }
+    .sub-header{
+
+background-color: gainsboro;
+        .header{
+            display:flex;
+            justify-content: space-between;
+            margin-top: 0;
+            padding: 20px;
+        }
+        .list-header{
+            padding: 20px;
+            ul{ 
+                display: flex;
+                justify-content: space-between;
+                li{
+                    display: flex;
+                   svg{
+                    width: auto;
+                    height: 1em;
+                    margin-right:20px;
+                   }
+                }
+            }
+        }
+        .button{
+
+        position: absolute;
+          top: 10px;
+          right: 10px;
+          svg{
+            z-index: 2;
+            fill: red;
+          }
+        }
+    }
+    
+}
