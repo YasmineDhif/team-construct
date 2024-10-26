@@ -45,3 +45,26 @@ Stack trace:
 [17-Oct-2024 17:30:52 UTC] PHP Parse error:  syntax error, unexpected token ",", expecting ":" in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 49
 [17-Oct-2024 17:31:02 UTC] PHP Warning:  Undefined variable $query_vars in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 22
 [17-Oct-2024 17:32:06 UTC] PHP Warning:  Undefined variable $query_vars in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 22
+[26-Oct-2024 09:38:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "issets" in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php:28
+Stack trace:
+#0 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-blog-header.php(19): require_once('C:\\Users\\yasmin...')
+#2 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\index.php(17): require('C:\\Users\\yasmin...')
+#3 {main}
+  thrown in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 28
+[26-Oct-2024 12:17:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "issets" in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php:28
+Stack trace:
+#0 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-blog-header.php(19): require_once('C:\\Users\\yasmin...')
+#2 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\index.php(17): require('C:\\Users\\yasmin...')
+#3 {main}
+  thrown in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 28
+[26-Oct-2024 12:34:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "issets" in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php:28
+Stack trace:
+#0 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-blog-header.php(19): require_once('C:\\Users\\yasmin...')
+#2 C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\index.php(17): require('C:\\Users\\yasmin...')
+#3 {main}
+  thrown in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 28
+[26-Oct-2024 12:45:01 UTC] PHP Warning:  Undefined variable $styles in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 128
+[26-Oct-2024 12:45:01 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\yasmine.dhif\Local Sites\team-construct\app\public\wp-content\themes\mrparfait\archive.php on line 128

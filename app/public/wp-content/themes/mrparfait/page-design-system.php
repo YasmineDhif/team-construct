@@ -50,7 +50,95 @@ get_header(); ?>
         <br/>
     </div>
 
-    <?php get_template_part('template-parts/form/input'); ?>
+    <h3>Formulaire</h3>
+    <?php get_template_part(
+        'template-parts/form/input',
+        'input',
+        array(
+            "label" => "Nom",
+            "labelinfo" => "Requis",
+            "name" => "Nom",
+            "type" => "text",
+            "placeholder" => "Nom"
+        )
+    )
+    ?>
+    <?php get_template_part(
+        'template-parts/form/input',
+        'input',
+        array(
+            "label" => "Prénom",
+            "labelinfo" => "Requis",
+            "name" => "Prénom",
+            "type" => "text",
+            "placeholder" => "Prénom"
+        )
+    )
+    ?>
+    <?php get_template_part(
+        'template-parts/form/input',
+        'input',
+        array(
+            "label" => "Email",
+            "labelinfo" => "Requis",
+            "name" => "Email",
+            "type" => "email",
+            "placeholder" => "Email"
+        )
+    )
+    ?>
+    <?php get_template_part(
+        'template-parts/form/input',
+        'input',
+        array(
+            "label" => "Mot de passe",
+            "labelinfo" => "Requis",
+            "name" => "Mot de passe",
+            "type" => "password",
+            "placeholder" => "Mot de passe"
+        )
+    )
+    ?>
+    <?php get_template_part(
+        'template-parts/form/input',
+        'input',
+        array(
+            "label" => "Téléphone",
+            "value" => "+32",
+            "name" => "Téléphone",
+            "type" => "tel",
+            "placeholder" => "Téléphone"
+        )
+    )
+    ?>
+
+    <?php get_template_part(
+        'template-parts/form/select',
+        'select',
+        array(
+            "name" => "Trier par prix",
+            "label" => "Tier par prix",
+            "labelinfo" => "Requis",
+            "options" => array(
+                array(
+                    "value" => "",
+                    "title" => "Entrez un prix",
+                    "selected" => false
+                ),
+                array(
+                    "value" => "1",
+                    "title" => "Entre 0 et 100 000",
+                    "selected" => false
+                ),
+                array(
+                    "value" => "2",
+                    "title" => "Entre 100 000 et 600 000",
+                    "selected" => true
+                )
+            ),
+        )
+    )
+    ?>
 
     <?php
     $id_bien = 19;
@@ -97,6 +185,8 @@ get_header(); ?>
             ?>
         <?php endforeach; ?>
     </div>
+
+   
 
 </div>
 
