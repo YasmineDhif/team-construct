@@ -84,6 +84,7 @@ $styles = get_terms(array(
 <main id="primary" class="site-main" style="min-height:75vh">
     <h1>Ceci est le template de mon archive (archive.php)</h1>
 
+    <a href="http://team-construct.local/ma-whislist/" class="wishlist-link">Voir ma Wishlist</a>
 
 <form method="GET" style= "min-height: 75vh">
 <?php

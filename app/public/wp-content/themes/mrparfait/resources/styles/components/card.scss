@@ -30,16 +30,22 @@ background-color: gainsboro;
                 }
             }
         }
-        .button{
-
-        position: absolute;
-          top: 10px;
-          right: 10px;
-          svg{
-            z-index: 2;
-            fill: red;
-          }
-        }
+       
+    }
+    .wishlist-button {
+        background-color: transparent; /* Couleur par défaut */
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .wishlist-button svg{
+        width:2rem;
+        height:auto;
+       fill:gray;
     }
     
+    .wishlist-button.active svg {
+        fill: red; /* Couleur lorsque l’élément est ajouté */
+    }
 }

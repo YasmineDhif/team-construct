@@ -11,5 +11,9 @@ require_once('inc/cpt.php');
 /* Taxonomies */
 require_once('inc/taxonomy.php');
 
+
+/* DEBUG */
+require_once('inc/ajax.php');
+
 /* DEBUG */
 require_once('inc/debug.php');

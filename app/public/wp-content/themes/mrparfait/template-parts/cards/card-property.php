@@ -20,6 +20,9 @@ $bathrooms=false;//Nombre
 $href=false;//URL
 $in_wishlist=false;//boolean
 
+$property_id= get_the_ID();
+$in_wishlist= false;
+
 
 if (isset($args["image_id"]))
 $image_id =$args["image_id"];
@@ -51,6 +54,17 @@ if (isset($args["in_wishlist"]) && $args["in_wishlist"])
 $in_wishlist="active";
 ?>
 
+
+<?php 
+
+$property_id = $args['property_id'] ?? get_the_ID();
+$in_wishlist = false;
+
+
+    $in_wishlist = in_array($property_id, $_SESSION['wishlist']);
+
+?>
+
 <div class="card">
     <div class="card-img">
         <?php if(!empty($image_id)):?>
@@ -73,6 +87,7 @@ $in_wishlist="active";
         <?php endif; ?>
 
         </div>
+
         <div class="list-header">
             <ul>
             <?php if(!empty($area)):?>
@@ -88,14 +103,16 @@ $in_wishlist="active";
 
             </ul>
         </div>
-        <div class="button">
-        <?php if(!empty($href)):?>
-            <a href="<?php echo $href;?>"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
-</svg></a>
-<?php endif; ?>
-        </div>
+        
     
    </div>
    
+<button class="wishlist-button <?php echo $in_wishlist ? 'active' : ''; ?>" data-id="<?php echo $property_id; ?>">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+    </svg>
+               </button>
 </div>
+
+</div>
+
